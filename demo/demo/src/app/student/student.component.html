@@ -1,0 +1,11 @@
+<form>
+  <h3>ID: {{student.id}}</h3>
+  <h3>Name: {{student.name}}</h3>
+  <h3>Age: {{student.age}}</h3>
+  <h3>Phone: {{student.phone}}</h3>
+  <h3>Mark: {{student.mark}}</h3>
+  <h3>Image: <img [src]="student.image"></h3>
+  ChangeAge: <input type="number"min="18" max="100" (change) ="changeAge($event.target)" >
+</form>
+
+
