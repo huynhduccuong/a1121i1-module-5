@@ -1,0 +1,16 @@
+<app-countdown-timer [seconds]="6"></app-countdown-timer>
+<app-countdown-timer-alias ></app-countdown-timer-alias>
+<app-countdown-timer-event (finish)="finishCountdown()">
+</app-countdown-timer-event>
+<!--<p>{{ countdownMsg }}</p>-->
+
+<app-countdown-timer-event-alias (timerEnd)="endCountdown()">
+</app-countdown-timer-event-alias>
+<!--<p>{{ countdownAliasMsg }}</p>-->
+
+<app-countdown-timer-get-set ></app-countdown-timer-get-set>
+
+<app-countdown-timer-onchanges></app-countdown-timer-onchanges>
+<app-rating-bar [max]="10" (rateChange)="onRateChange($event)"></app-rating-bar>
+
+
